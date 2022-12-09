@@ -1,0 +1,198 @@
+<html>
+<head>
+
+
+<script>
+
+	
+	
+var n = 1 ;
+function change(){
+var img1 = document.getElementById("img");
+img1.src = "img"+n+".jpg";
+};
+window.onload = function(){
+var buttonleft = document.getElementById("left");
+buttonleft.addEventListener("click",function(){
+if(n > 1)
+{
+n--;
+change();
+}else{
+alert("this is the first one");
+}
+},false);
+var buttonright = document.getElementById("right");
+buttonright.addEventListener("click",function(){
+if(n < 4)
+{
+n++;
+change();
+}else{
+alert("this is the last one");
+}
+},false);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+</head>
+
+
+
+<style>
+@media screen and (max-width: 800px) {
+
+
+.button {
+    background-color: #4CAF50; /* Green */
+
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    float: left;
+	width:100%;
+}
+
+.button2 {
+    background-color: red; /* Green */
+
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    float: left;
+	width:100%;
+}
+
+
+
+.button:hover {
+    background-color: #3e8e41;
+}
+
+
+
+.main{
+	
+	width: 100%;
+	float: left;
+	
+}
+body{
+		margin: 0; 
+		padding: 0;
+		border: 0;
+	}
+
+
+
+h1 {text-align: center}
+}
+
+@media screen and (min-width: 801px) {
+   
+
+.button {
+    background-color: #4CAF50; /* Green */
+
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    float: left;
+	width:33.33%;
+}
+
+.button2 {
+    background-color: red; /* Green */
+
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    float: left;
+	width:33.33%;
+}
+
+
+
+.button:hover {
+    background-color: #3e8e41;
+}
+
+
+
+.main{
+	
+	width: 50%;
+	float: left;
+	
+}
+body{
+		margin: 0; 
+		padding: 0;
+		border: 0;
+	}
+
+
+
+h1 {text-align: center}
+
+}
+
+</style>
+
+
+<body style="background-color:#FFD700;">
+
+<div id="header" style="background-color:#FFA500;height:350px;"><img src="estilo-de-vida-soviético-desportivo-conceito-ussr-e-s-velho-construtor-carroças-fazendo-exercícios-no-ginásio-da-velha-escola-217784408.jpg" style="width:100%;height:100%;"></div></div>
+
+<button class="button2">about us</button>
+<button class="button"><a href="loc.html">our location</a></button>
+<button class="button"><a href="reg.html">join us</a></button>
+<div style="zoom:2;">
+<h1>THE GYM about us</h1>
+</div>
+<div class="main">
+<img src="img1.jpg" width="100%" height="700" id="img"/>
+<br />
+<div style="width:50%;float: left;zoom:2;"><input type="button" value="previous" id="left" name="left"  width="50" height="30"/></div>
+<div style="width:50%;float: left;text-align: right;zoom:2;"><input type="button" value="next one" id="right" name="right" width="50" height="30"/></div>
+</div style="width:50%;">
+<div>
+
+<h1><br>
+THE GYM <br>
+is a gym with a long history<br>
+Known for its signature lifetime transferable membership card<br>
+Our members can transfer their qualifications to others<br>
+even transfer between generations<br>
+We have facilities in several countries covering a variety of projects<br><br><br><br><br>
+Click the button below the right to see more pictures about us
+</h1>
+
+
+</div>
+</body>
+</html>

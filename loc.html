@@ -1,0 +1,215 @@
+<html>
+<head>
+<script
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBKNkqtyesNkODeZVF-2oAaUJgLayu9CZ0&sensor=false">
+</script>
+
+<script>
+var myCenter=new google.maps.LatLng(40.6922095,-73.985168);
+var myCenter2=new google.maps.LatLng(40.7416817,-73.9928753);
+var myCenter3=new google.maps.LatLng(66.8939195,-162.5962251);
+function initialize()
+{
+	
+	
+var mapProp = {
+  center:myCenter,
+  zoom:12,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+var mapProp2 = {
+  center:myCenter2,
+  zoom:12,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+var mapProp3 = {
+  center:myCenter3,
+  zoom:12,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+	
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+var map2=new google.maps.Map(document.getElementById("googleMap2"),mapProp2);
+var map3=new google.maps.Map(document.getElementById("googleMap3"),mapProp3);
+
+
+var marker=new google.maps.Marker({
+  position:myCenter,
+  });
+
+var marker2=new google.maps.Marker({
+  position:myCenter2,
+  });
+	
+var marker3=new google.maps.Marker({
+  position:myCenter3,
+  });
+	
+marker.setMap(map);
+marker2.setMap(map2);
+marker3.setMap(map3);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+</head>
+
+
+
+<style>
+
+
+@media screen and (min-width: 800px) {
+ 
+   
+
+
+.button {
+    background-color: #4CAF50; /* Green */
+
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    float: left;
+	width:33.33%;
+}
+
+.button2 {
+    background-color: red; 
+
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    float: left;
+	width:33.33%;
+}
+
+.button:hover {
+    background-color: #3e8e41;
+}
+
+body{
+		margin: 0; 
+		padding: 0;
+		border: 0;
+	}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+font-size:1px;
+color: #FFE823;
+
+}
+}
+@media screen and (max-width: 800px) {
+
+
+
+.button {
+    background-color: #4CAF50; /* Green */
+
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    float: left;
+	width:100%;
+}
+
+.button2 {
+    background-color: red; 
+
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    float: left;
+	width:100%;
+}
+
+.button:hover {
+    background-color: #3e8e41;
+}
+
+body{
+		margin: 0; 
+		padding: 0;
+		border: 0;
+	}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+font-size:1px;
+color: #FFE823;
+
+}
+
+
+
+
+
+}
+
+
+
+
+</style>
+
+
+<body style="background-color:#FFD700;">
+
+<div id="header" style="background-color:#FFA500;height:350px;"><img src="捕获.PNG" style="width:100%;height:100%;"></div></div>
+
+<button class="button"><a href="about.html">about us</a></button>
+<button class="button2">our location</button>
+<button class="button"><a href="reg.html">join ous</a></button>
+<div style="zoom:2;background-color:#FFD700;">
+<h1>THE GYM location</h1>
+</div>
+
+<div id="googleMap" style="width:50%;height:380px;float:left"></div>
+<div id="menu" style="background-color:#FFD700;height:380px;width:50%;float:left;">
+<h1><br>300 Jay St, Brooklyn, NY 11201<br>
+THE GYM NYC NYCCT Facility<br><h2>currently unavailable</h2></div>
+<div id="googleMap2" style="width:50%;height:380px;float:left"></div>
+<div id="menu" style="background-color:#FFD700;height:380px;width:50%;float:left;">
+<h1><br>45 Rockefeller Plaza, New York, NY 10111<br>
+THE GYM NYC Rockefeller Center Facility<br><h2>currently unavailable</h2></div>
+<div id="googleMap3" style="width:50%;height:380px;float:left"></div>
+<div id="menu" style="background-color:#FFD700;height:380px;width:50%;float:left;">
+<h1><br>388 3rd Ave, Whittier St, Kotzebue, AK 99752<br>
+THE GYM Alaska Facility<br>open all year</h1>
+</div>
+
+</body>
+</html>
